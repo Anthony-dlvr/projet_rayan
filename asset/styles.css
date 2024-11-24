@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header.banner {
+    background-color: #ff5733;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #ff5733;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.nav-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.concept, .offers, .mentors, .testimonials {
+    padding: 2rem;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.step {
+    width: 200px;
+}
+
+.image-placeholder {
+    background-color: #ddd;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.offer-cards, .abonnements {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card, .abonnement, .mentor-card {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+footer.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-links a, .social-links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Checkbox cachée */
+.toggle-panel {
+    display: none; /* Cache la checkbox */
+}
+
+/* Bouton pour ouvrir la fenêtre */
+.open-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: firebrick;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Fenêtre coulissante */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Fenêtre cachée hors de la vue */
+    width: 300px;
+    height: 100%;
+    color: black;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease; /* Animation coulissante */
+    padding: 20px;
+}
+
+/* Contenu de la fenêtre */
+.side-panel h2 {
+    margin: 0 0 20px;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Si la checkbox est cochée, montre la fenêtre */
+.toggle-panel:checked ~ .side-panel {
+    right: 0; /* Fenêtre glisse dans la vue */
+}
+
+
